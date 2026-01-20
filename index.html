@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พรรคนับหนึ่ง - เบอร์ 7 | ยโสธรพิทยาคม</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">พรรคนับหนึ่ง <span class="number">#7</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" onclick="showPage('home')">หน้าหลัก</a></li>
+            <li><a href="#policies" onclick="showPage('policies')">นโยบาย</a></li>
+            <li><a href="#members" onclick="showPage('members')">สมาชิกพรรค</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="page active">
+        <div class="hero-content">
+            <h1 class="fade-in">พรรคนับหนึ่ง เบอร์ 7</h1>
+            <h2 class="slide-up">โรงเรียนยโสธรพิทยาคม (ย.ส.)</h2>
+            <p class="slogan">"สายงานต่อ ก่องานใหม่ ใส่ใจปัญหาเล็กๆ"</p>
+            <button class="cta-btn" onclick="showPage('policies')">ดูนโยบายของเรา</button>
+        </div>
+        <div class="circle-bg"></div>
+    </section>
+
+    <section id="policies" class="page">
+        <h2 class="section-title">10 นโยบายหลัก</h2>
+        <div class="policy-container" id="policy-list">
+            </div>
+    </section>
+
+    <div id="policy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">ชื่อนโยบาย</h2>
+            <p id="modal-desc">รายละเอียดนโยบาย...</p>
+        </div>
+    </div>
+
+    <section id="members" class="page">
+        <h2 class="section-title">ทีมงานของเรา</h2>
+        <div class="members-grid">
+            <div class="member-card">
+                <div class="img-placeholder">ใส่รูปที่นี่</div> <h3>ชื่อ-สกุล สมาชิก 1</h3>
+                <p>ตำแหน่ง: หัวหน้าพรรค</p>
+                <div class="contact">
+                    <a href="#"><i class="fab fa-instagram"></i> IG: member1</a>
+                    <a href="#"><i class="fab fa-facebook"></i> FB: member1</a>
+                </div>
+            </div>
+             <div class="member-card">
+                <div class="img-placeholder">ใส่รูปที่นี่</div>
+                <h3>ชื่อ-สกุล สมาชิก 2</h3>
+                <p>ตำแหน่ง: รองหัวหน้าพรรค</p>
+                <div class="contact">
+                    <a href="#"><i class="fab fa-instagram"></i> IG: member2</a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 พรรคนับหนึ่ง - โรงเรียนยโสธรพิทยาคม</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
