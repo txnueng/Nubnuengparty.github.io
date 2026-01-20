@@ -223,3 +223,13 @@ nav {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+/* เพิ่มต่อท้ายไฟล์ style.css */
+.member-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* ตัดส่วนเกินออกให้รูปไม่เบี้ยว */
+    border-radius: 50%; /* ทำเป็นวงกลม */
+    border: 3px solid var(--primary-color);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
